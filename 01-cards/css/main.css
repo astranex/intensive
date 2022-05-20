@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 600;
   overflow: hidden;
   margin: 0;
-  background-color: #111;
+  /* background-color: #111; */
+  background: url(../img/bg.jpg) no-repeat center top / cover;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -37,12 +38,18 @@ body {
 
 .slide h3 {
   position: absolute;
-  font-size: 24px;
-  bottom: 20px;
-  left: 20px;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  bottom: 0px;
   margin: 0;
+  padding: 15px;
   opacity: 0;
   transition: .3s all ease-in;
+  letter-spacing: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0 0 20px 20px;
+  width: 100%;
 }
 
 .slide.active {
