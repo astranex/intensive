@@ -1,0 +1,125 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  /* background-color: #e5e5e5; */
+  background: url(../img/bg.jpg) no-repeat center top / cover;
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  padding-top: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 70px;
+  border-radius: 20px;
+  background-color: #eee;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+}
+
+.row {
+  display: flex;
+  width: 1300px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.col-header {
+  width: 150px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem;
+  color: #fff;
+}
+
+.add-button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  cursor: pointer;
+}
+
+input, textarea {outline:none;} input:active, textarea:active {outline:none;} :focus {outline:none;} textarea {resize:none;} textarea {resize:vertical;} textarea {resize:horizontal;}
+
+.item {
+  margin-top: 15px;
+  width: 150px;
+  min-height: 66px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(235, 235, 235);
+  color: #888888;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  cursor: grab;
+  transition: .1s all ease-in;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.placeholder {
+  width: 150px;
+  height: 66px;
+  padding-bottom: 550px;
+  transition: .2s all ease-in;
+  border-top: 2px solid rgba(0, 0, 0, 0);
+}
+
+.new {
+  background: linear-gradient(90deg, #a4afc4 0%, #abb1bd 179.25%);
+}
+
+.start {
+  background: linear-gradient(90deg, #255dc5 0%, #1663f1 179.25%);
+}
+
+.progress {
+  background: linear-gradient(90deg, #209cff 0%, #688ee0 100%);
+}
+
+.done {
+  background: linear-gradient(90deg, #19a3ff 0%, #15a1ff 100%);
+}
+
+.idea {
+  background: linear-gradient(90deg, #ff7519 0%, #ff6b15 100%);
+}
+
+.request {
+  background: linear-gradient(90deg, #ffae19 0%, #ffa115 100%);
+}
+
+.client {
+  background: linear-gradient(90deg, #ffae19 0%, #ffa115 100%);
+}
+
+.error {
+  background: linear-gradient(90deg, #ff2819 0%, #ff3815 100%);
+}
+
+.hold {
+  background: #f7f6f7;
+  border: 1px solid #eee;
+  color: #828282;
+}
+
+.hide {
+  opacity: 0;
+  transition: .08s all ease-in;
+}
+
+.hovered {
+  border-top: 2px solid rgb(170, 170, 170);
+}
