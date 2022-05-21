@@ -1,11 +1,13 @@
 
 * {
   box-sizing: border-box;
+  transition: .2s all ease;
 }
 
 body {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   height: 100vh;
   overflow: hidden;
   margin: 0;
@@ -15,10 +17,12 @@ body {
 a {
   color: #fff;
   text-decoration: none;
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
 }
 
 a:hover {
-  color: #16D9E3;
+  font-weight: 500;
+  color: #1691e3;
 }
 
 .start {
@@ -26,6 +30,8 @@ a:hover {
 }
 
 h1 {
+  width: 100%;
+  margin-top: 0px;
   line-height: 1.4;
   font-size: 3.5rem;
 }
@@ -37,12 +43,19 @@ h1 {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  transition: margin 1s ease;
-  background: linear-gradient(90deg, #29323C 0%, #485563 100%);
+  transition: margin .5s ease;
+  /* background: linear-gradient(90deg, #29323C 0%, #485563 100%); */
+  background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614395646_28-p-temnii-neitralnii-fon-32.jpg) no-repeat center top / cover;
 }
 
 .screen.up {
   margin-top: -100vh;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .time-list {
@@ -58,8 +71,9 @@ h1 {
 }
 
 .time-btn {
+  font-weight: 500;
   background-color: transparent;
-  border: 2px solid #C0C0C0;
+  border: 3px solid #C0C0C0;
   color: #fff;
   cursor: pointer;
   font-family: inherit;
@@ -68,8 +82,8 @@ h1 {
 }
 
 .time-btn:hover {
-  border: 2px solid #16D9E3;
-  color: #16D9E3;
+  border: 3px solid #1691e3;
+  color: #1691e3;
 }
 
 .hide {
@@ -80,6 +94,16 @@ h1 {
   color: #16D9E3;
 }
 
+.misses {
+  margin-top: -25px;
+  font-size: 24px;
+}
+
+.miss {
+  color: #f5610b;
+}
+
+
 .board {
   display: flex;
   justify-content: center;
@@ -87,8 +111,8 @@ h1 {
   position: relative;
   width: 500px;
   height: 500px;
-  background: linear-gradient(118.38deg, #29323C -4.6%, #485563 200.44%);
-  box-shadow: -8px -8px 20px #2A333D, 10px 7px 20px #475462;
+  background: linear-gradient(118.38deg, #1b2735 -4.6%, #213041 200.44%);
+  box-shadow: -8px -8px 20px #15212e, 10px 7px 20px #15212e;
   border-radius: 30px;
   overflow: hidden;
 }
