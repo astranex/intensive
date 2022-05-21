@@ -1,6 +1,7 @@
 
 // Переменные
 
+const heading = document.querySelector('.heading')
 const startBtn = document.querySelector('#start')
 const screens = document.querySelectorAll('.screen')
 const timeList = document.querySelector('#time-list')
@@ -22,6 +23,8 @@ const colors = [ // Массив цветов
 ]
 
 // Функции
+
+setInterval(() => heading.style.color = getRandomColor(), 1000)
 
 function startGame() {
    setInterval(decreaseTime, 1000)
